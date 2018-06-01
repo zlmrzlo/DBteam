@@ -3,8 +3,25 @@
 
 <head></head>
 <title>Chapter 7</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width", initial-scale="1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
+
+<style type="text/css">
+    a:link {
+        color: red;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+</style>
 <style>
     * {
         margin: 0;
@@ -29,6 +46,8 @@
         height: 60px;
         line-height: 60px;
         width: 1200px;
+        text-align: center;
+
 
         background: rgb(202, 84, 5);
         color: white;
@@ -40,6 +59,7 @@
         overflow: hidden;
         background: rgb(48, 0, 0);
         width: 1200px;
+        color: white;
     }
 
     #main_gnb>ul.left {
@@ -114,8 +134,9 @@
 
     #main_lnb_bold {
         font-weight: bold;
-        font-size: 25px;
         padding: 10px;
+        font-size: 25px;
+        text-align: center;
     }
 </style>
 <!-- 본문 -->
@@ -149,14 +170,14 @@
     #detail_list {
         overflow: hidden;
         padding: 10px;
-        background: rgb(255, 255, 255);
+        background: rgb(200, 206, 206);
         padding-bottom: 15px;
-        border: 1px solid rgb(255, 255, 255);
+        border: 10px solid white;
     }
 
     #detail_list>ul {
         float: left;
-        width: 192px;
+        width: 800px;
     }
 
     #detail_list>ul>li {
@@ -179,34 +200,30 @@
         font-weight: bold;
         color: rgb(48, 0, 0);
     }
+
+    #table, th, td {
+        text-align: center;
+        border: 1px solid red;
+    }
+
+    #tableset {
+        padding: 20px;
+    }
 </style>
 </head>
 
 <body>
     <header id="main_header">
-        <h1><a href="#">　KWU Mini U-Campus</h1></a>
+        <h1>
+            <a href="http:/info.kw.ac.kr">KW Mini U-Campus</h1>
+        </a>
     </header>
     <nav id="main_gnb">
-        <!-- <ul class="left">
+        <ul class="left">
             <li>
-                <a href="#">Button</a>
+                <a>강승연 2016609043</a>
             </li>
-            <li>
-                <a href="#">Button</a>
-            </li>
-            <li>
-                <a href="#">Button</a>
-            </li>
-            <li>
-                <a href="#">Button</a>
-            </li>
-            <li>
-                <a href="#">Button</a>
-            </li>
-            <li>
-                <a href="#">Button</a>
-            </li>
-        </ul> -->
+        </ul>
         <ul class="right">
             <li>
                 <a href="#">광운대학교 홈페이지</a>
@@ -232,110 +249,116 @@
                     <a href="#">수강생 관리</a>
                 </li>
             </ul>
+
         </nav>
         <div id="content_wrap">
+
             <div id="detail_list">
-                <ul class="column_1">
+                <h2>수강과목</h2>
+                <div id="tableset">
+                    <table border="table1" width="800px" height="200px">
+                        <tr>
+                            <th>Name</th>
+                            <th>Time</th>
+                            <th>Board</th>
+                            <th>　　　</th>
+                        </tr>
+                        <tr>
+                            <td>데이터베이스</td>
+                            <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
+                            <td rowspan>강의실 GO</td>
+                            <td rowspan>　　　</td>
+                        </tr>
+                        <tr>
+                            <td>데이터베이스</td>
+                            <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
+                            <td rowspan>강의실 GO</td>
+                            <td rowspan>　　　</td>
+                        </tr>
+                        <tr>
+                            <td>데이터베이스</td>
+                            <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
+                            <td rowspan>강의실 GO</td>
+                            <td rowspan>　　　</td>
+                        </tr>
+                        <tr>
+                            <td>데이터베이스</td>
+                            <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
+                            <td rowspan>강의실 GO</td>
+                            <td rowspan>　　　</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- <ul class="column_1">
                     <li class="header">
-                        <p>Hello from the</p>
+                        <p>데이터베이스</p>
                     </li>
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>d</li>
-                    <li>e</li>
-                    <li>f</li>
-                    <li class="header">
-                        <p>other side</p>
-                    </li>
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>d</li>
-                    <li>e</li>
-                    <li>f</li>
+                    <li>0524 휴강 공지</li>
+                    <li>0521 휴강 공지</li>
+                    <li>0531 폐강 공지</li>
                 </ul>
                 <ul class="column_2">
                     <li class="header">
-                        <p>I wish I could've</p>
+                        <p>컴퓨터 구조</p>
                     </li>
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>d</li>
-                    <li>e</li>
-                    <li>f</li>
-                    <li class="header">
-                        <p>엉엉엉엉</p>
-                    </li>
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>d</li>
-                    <li>e</li>
-                    <li>f</li>
+                    <li>0524 휴강 공지</li>
+                    <li>0521 휴강 공지</li>
+                    <li>0531 폐강 공지</li>
                 </ul>
-                <ul class="column_3">
+                <ul class="column_2">
                     <li class="header">
-                        <p>이제 그만</p>
+                        <p>자료 구조</p>
                     </li>
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>d</li>
-                    <li>e</li>
-                    <li>f</li>
-                    <li class="header">
-                        <p>ㅇㄴㅁㄹ</li>
-                    <li>ㅁㅇㄴㄹㅇㄴㅁㄹ</li>
-                    <li>ㅁㅇㄴㄹ</li>
-                    <li class="header">
-                        <p>ㅁㅇㄹㄴ</p>
-                    </li>
-                    <li>ㄴㅇㄹㅇㄴㅁㄹ</li>
-                </ul>
-                <ul class="column_4">
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>d</li>
-                    <li>e</li>
-                    <li>f</li>
-                    <li class="header">
-                        <p>Hello</p>
-                    </li>
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
-                    <li>d</li>
-                    <li>e</li>
-                    <li>f</li>
-                </ul>
+                    <li>0524 휴강 공지</li>
+                    <li>0521 휴강 공지</li>
+                    <li>0531 폐강 공지</li>
+                </ul> -->
             </div>
-            <div id="content">
-                <article>
-                    <h1>table1</h1>
-                    <p>hello</p>
-                    <p>hello2</p>
-                </article>
-                <article>
-                    <h1>table2</h1>
-                    <p>hello</p>
-                    <p>hello2</p>
-                </article>
-                <article>
-                    <h1>table3</h1>
-                    <p>hello</p>
-                    <p>hello2</p>
-                </article>
-                <article>
-                    <h1>table3</h1>
-                    <p>hello</p>
-                    <p>hello2</p>
-                </article>
+            <div id="detail_list">
+                <h2>책임 지도 교수</h2>
+                <div id="tableset">
+                    <table border="table1" width="800px" height="200px">
+                        <tr>
+                            <th>Name</th>
+                            <td>김용혁</td>
+                            <th>전화번호</th>
+                            <td>01000001234</td>
+                        </tr>
+                        <tr>
+                            <th>연구실위치</th>
+                            <td>새빛관000호</td>
+                            <th>이메일</th>
+                            <td>hahaha@123.com</td>
+                        </tr>
+                        <tr>
+                            <th>상담시간</th>
+                            <td>　</td>
+                            <th>홈페이지</th>
+                            <td>　</td>
+                        </tr>
 
+                    </table>
+                </div>
 
             </div>
+            <!-- <div id="detail_list">
+                <table border="table1">
+                    <tr>
+                        <th>Title1</th>
+                        <th>Title2</th>
+                    </tr>
+
+                    <tr>
+                        <td>Test11</td>
+                        <td rowspan="table2">Test12</td>
+                    </tr>
+
+                    <tr>
+                        <td>Test21</td>
+                    </tr>
+                </table>
+            </div> -->
         </div>
     </div>
     <footer id="main_footer">
