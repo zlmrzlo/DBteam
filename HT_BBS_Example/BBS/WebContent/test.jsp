@@ -1,0 +1,391 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head></head>
+<title>Chapter 7</title>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
+
+<style type="text/css">
+    a:link {
+        color: red;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+</style>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Helvetica', sans-serif;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+<!-- 헤더 -->
+<style>
+    #main_header {
+        height: 60px;
+        line-height: 60px;
+        width: 1200px;
+        text-align: center;
+
+
+        background: rgb(202, 84, 5);
+        color: white;
+    }
+</style>
+<!-- 네비게이션 -->
+<style>
+    #main_gnb {
+        overflow: hidden;
+        background: rgb(48, 0, 0);
+        width: 1200px;
+        color: white;
+    }
+
+    #main_gnb>ul.left {
+        overflow: hidden;
+        float: left;
+    }
+
+    #main_gnb>ul.right {
+        overflow: hidden;
+        float: right;
+    }
+
+    #main_gnb>ul.left>li {
+        float: left;
+    }
+
+    #main_gnb>ul.right>li {
+        float: left;
+    }
+
+    /* a 태그 설정 */
+
+    #main_gnb a {
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        font-weight: bold;
+    }
+
+    body {
+        min-width: 1200px;
+    }
+</style>
+<!-- 콘텐츠 -->
+<style>
+    #wrap {
+        overflow: hidden;
+    }
+
+    #wrap>#main_lnb {
+        float: left;
+        width: 200px;
+    }
+
+    #wrap>#content_wrap {
+        float: left;
+        padding: 10px;
+        width: 980px;
+        margin-right: -200px;
+
+    }
+
+    #wrap>#content_wrap>#content {
+        padding-right: 200px;
+    }
+</style>
+<!-- 수직 목록 -->
+<style>
+    #wrap {
+        width: 1200px;
+        background: rgba(202, 84, 5, 0.712);
+    }
+
+    #main_lnb>ul>li>a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 15px;
+        color: white;
+        font-weight: bold;
+    }
+
+    #main_lnb_bold {
+        font-weight: bold;
+        padding: 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+</style>
+<!-- 본문 -->
+<style>
+    #content {
+        background: white;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    article {
+        padding: 20px;
+    }
+</style>
+<!-- 푸터 -->
+<style>
+    #main_footer {
+        position: relative;
+        width: 1180px;
+        left: 0%;
+        text-align: right;
+        padding: 10px;
+        background: rgb(48, 0, 0);
+        color: white;
+    }
+
+    #footer_photo {
+        float: left;
+    }
+</style>
+<style>
+    #detail_list {
+        overflow: hidden;
+        padding: 10px;
+        background: rgb(200, 206, 206);
+        padding-bottom: 15px;
+        border: 10px solid white;
+    }
+
+    #detail_list>ul {
+        float: left;
+        width: 800px;
+    }
+
+    #detail_list>ul>li {
+        height: 20px;
+        margin-top: 5px;
+        padding: 3px 5px;
+        color: rgb(0, 0, 0);
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    #detail_list>ul>li.header {
+        padding-left: 15px;
+    }
+
+    #detail_list>ul>li.header>p {
+        font-weight: bold;
+        color: rgb(48, 0, 0);
+    }
+
+    #table, th, td {
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    #tableset {
+        padding: 20px;
+    }
+</style>
+</head>
+
+<body>
+    <header id="main_header">
+        <h1>
+            <a href="http:/info.kw.ac.kr">KW Mini U-Campus</h1>
+        </a>
+    </header>
+    <nav id="main_gnb">
+        <ul class="left">
+            <li>
+                <a>강승연 2016609043</a>
+            </li>
+        </ul>
+        <ul class="right">
+            <li>
+                <a href="#">광운대학교 홈페이지</a>
+            </li>
+            <li>
+                <a href="#">로그아웃</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="wrap">
+        <nav id="main_lnb">
+            <ul>
+                <li id="main_lnb_bold">
+                    <a>강의종합정보</a>
+                </li>
+                <li>
+                    <a href="#">강의자료실</a>
+                </li>
+                <li>
+                    <a href="#">수강과목 조회</a>
+                </li>
+                <li>
+                    <a href="#">수강생 관리</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div id="content_wrap">
+
+            <div id="detail_list">
+                <h2>수강과목</h2>
+                <div id="tableset">
+                    <table border="table1" width="800px" height="200px">
+                        <thead>
+                            <th>Name</th>
+                            <th>Time</th>
+                            <th>Board</th>
+                            <th>　　　</th>
+                        </thead>
+                        <!-- <tr>
+                            <td>데이터베이스</td>
+                            <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
+                            <td rowspan>강의실 GO</td>
+                            <td rowspan>　　　</td>
+                        </tr>
+                        <tr>
+                            <td>데이터베이스</td>
+                            <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
+                            <td rowspan>강의실 GO</td>
+                            <td rowspan>　　　</td>
+                        </tr>
+                        <tr>
+                            <td>데이터베이스</td>
+                            <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
+                            <td rowspan>강의실 GO</td>
+                            <td rowspan>　　　</td>
+                        </tr>
+                        <tr>
+                            <td>데이터베이스</td>
+                            <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
+                            <td rowspan>강의실 GO</td>
+                            <td rowspan>　　　</td>
+                        </tr> -->
+                        <tbody>
+                            <%;
+                             for(int i=0;i<3;i++){
+                         %>
+                         <tr>
+                            <td>데이터베이스</td>
+                            <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
+                            <td rowspan>강의실 GO</td>
+                            <td rowspan>　　　</td>
+                        </tr>
+                                 
+                         <%
+                             }
+                            %>                  
+                            </tbody>
+                    </table>
+                </div>
+
+                <!-- <ul class="column_1">
+                    <li class="header">
+                        <p>데이터베이스</p>
+                    </li>
+                    <li>0524 휴강 공지</li>
+                    <li>0521 휴강 공지</li>
+                    <li>0531 폐강 공지</li>
+                </ul>
+                <ul class="column_2">
+                    <li class="header">
+                        <p>컴퓨터 구조</p>
+                    </li>
+                    <li>0524 휴강 공지</li>
+                    <li>0521 휴강 공지</li>
+                    <li>0531 폐강 공지</li>
+                </ul>
+                <ul class="column_2">
+                    <li class="header">
+                        <p>자료 구조</p>
+                    </li>
+                    <li>0524 휴강 공지</li>
+                    <li>0521 휴강 공지</li>
+                    <li>0531 폐강 공지</li>
+                </ul> -->
+            </div>
+            <div id="detail_list">
+                <h2>책임 지도 교수</h2>
+                <div id="tableset">
+                    <table border="table1" width="800px" height="200px">
+                        <tr>
+                            <th>Name</th>
+                            <td>김용혁</td>
+                            <th>전화번호</th>
+                            <td>01000001234</td>
+                        </tr>
+                        <tr>
+                            <th>연구실위치</th>
+                            <td>새빛관000호</td>
+                            <th>이메일</th>
+                            <td>hahaha@123.com</td>
+                        </tr>
+                        <tr>
+                            <th>상담시간</th>
+                            <td>　</td>
+                            <th>홈페이지</th>
+                            <td>　</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+            <!-- <div id="detail_list">
+                <table border="table1">
+                    <tr>
+                        <th>Title1</th>
+                        <th>Title2</th>
+                    </tr>
+
+                    <tr>
+                        <td>Test11</td>
+                        <td rowspan="table2">Test12</td>
+                    </tr>
+
+                    <tr>
+                        <td>Test21</td>
+                    </tr>
+                </table>
+            </div> -->
+        </div>
+    </div>
+    <footer id="main_footer">
+        <div id="footer_photo">
+            <img src="images/kwu.png" width="180" height="56" />
+        </div>
+        <h4>　</h4>
+        <h4>서울 노원구 광운로 20()월계동 447-1) 광운대학교 TEL. 02-940-5114 / Mail. webadmin@kw.ac.kr</h4>
+        <address>COPYRIGHT (C) 2018 DATABASE PROJECT TEAM - KANG SEO CHOI LEE - ALL RIGHTS RESERVED</address>
+    </footer>
+</body>
+
+</html>
