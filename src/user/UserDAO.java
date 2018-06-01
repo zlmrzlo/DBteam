@@ -13,7 +13,7 @@ public class UserDAO {
    
    public UserDAO() {
       try {
-         String dbURL="jdbc:mysql://localhost:3306/bbs";
+         String dbURL="jdbc:mysql://localhost:3306/BBS?characterEncoding=utf-8";
          String dbID="root";
          String dbPassword="root"; 
          Class.forName("com.mysql.jdbc.Driver");
@@ -31,15 +31,15 @@ public class UserDAO {
          rs=pstmt.executeQuery();
          if(rs.next()) {
             if(rs.getString(1).equals(userPassword))
-               return 1;//����
+               return 1; 
             else
-               return 0;//�о����� ����
+               return 0;
          }
-         return -1;//���̵� ����
+         return -1;
       }catch (Exception e) {
          e.printStackTrace();
       }
-      return -2;//�����ͺ��̽� ����
+      return -2; 
    }
    
    public int join(User user) {
@@ -55,7 +55,7 @@ public class UserDAO {
       }catch(Exception e) {
          e.printStackTrace();
       }
-      return -1;
+      return -1; // ������ ���̽� ����
    }
    
 }
