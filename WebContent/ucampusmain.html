@@ -3,8 +3,6 @@
 
 <head></head>
 <title>Chapter 7</title>
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> -->
 
 <style type="text/css">
     a:link {
@@ -203,7 +201,7 @@
 
     #table, th, td {
         text-align: center;
-        border: 1px solid red;
+        border: 1px solid black;
     }
 
     #tableset {
@@ -215,7 +213,7 @@
 <body>
     <header id="main_header">
         <h1>
-            <a href="http:/info.kw.ac.kr">KW Mini U-Campus</h1>
+            <a href="ucampusmain.html">KW Mini U-Campus</h1>
         </a>
     </header>
     <nav id="main_gnb">
@@ -240,7 +238,7 @@
                     <a>강의종합정보</a>
                 </li>
                 <li>
-                    <a href="#">강의자료실</a>
+                    <a href="강의자료실.html">강의자료실</a>
                 </li>
                 <li>
                     <a href="#">수강과목 조회</a>
@@ -257,13 +255,13 @@
                 <h2>수강과목</h2>
                 <div id="tableset">
                     <table border="table1" width="800px" height="200px">
-                        <tr>
+                        <thead>
                             <th>Name</th>
                             <th>Time</th>
                             <th>Board</th>
                             <th>　　　</th>
-                        </tr>
-                        <tr>
+                        </thead>
+                        <!-- <tr>
                             <td>데이터베이스</td>
                             <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
                             <td rowspan>강의실 GO</td>
@@ -286,7 +284,22 @@
                             <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
                             <td rowspan>강의실 GO</td>
                             <td rowspan>　　　</td>
+                        </tr> -->
+                        <tbody>
+                            <%;
+                             for(int i=0;i<3;i++){
+                         %>
+                         <tr>
+                            <td>데이터베이스</td>
+                            <td rowspan>화 1교시(새빛204) , 목 2교시(새빛204)</td>
+                            <td rowspan>강의실 GO</td>
+                            <td rowspan>　　　</td>
                         </tr>
+                                 
+                         <%
+                             }
+                            %>	   				
+                            </tbody>
                     </table>
                 </div>
 
